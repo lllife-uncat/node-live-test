@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Parner Settings test Suite</title>
+        <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+        <script type="text/javascript" src="bower_components/angular-resource/angular-resource.js"></script>
+        <script type="text/javascript" src="bower_components/jasmine/lib/jasmine-core/jasmine.js"></script>
+        <script type="text/javascript" src="bower_components/jasmine/lib/jasmine-core/jasmine-html.js"></script>
+
+        <script type="text/javascript" src="home/home.js"></script>
+        <script type="text/javascript" src="tests/home/home.test.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="bower_components/jasmine/lib/jasmine-core/jasmine.css">
+    </head>
+
+    <body>
+        <script stype="text/javascript">
+
+            window.addEventListener("load", function onLoad(){
+                console.log("hello");
+
+                var jasmineEnv= jasmine.getEnv();
+                jasmineEnv.addReporter(new jasmine.HtmlReporter());
+                jasmineEnv.execut();
+
+            });
+        </script>
+    </body>
+</html>
